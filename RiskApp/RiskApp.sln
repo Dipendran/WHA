@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Risk.Service", "Service\Ris
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Risk.Client", "Client\Risk.Client\Risk.Client.csproj", "{F9B76ABF-0D98-4762-BE4D-CB7EB64893F5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Risk.Model", "Model\Risk.Model.csproj", "{4074E13F-82BA-4154-84A1-DA5BEAA97780}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Risk.Test", "Test\Risk.Test\Risk.Test.csproj", "{265E58EE-CF4F-4B6E-A928-EEF957E884E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{F9B76ABF-0D98-4762-BE4D-CB7EB64893F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9B76ABF-0D98-4762-BE4D-CB7EB64893F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9B76ABF-0D98-4762-BE4D-CB7EB64893F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4074E13F-82BA-4154-84A1-DA5BEAA97780}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4074E13F-82BA-4154-84A1-DA5BEAA97780}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4074E13F-82BA-4154-84A1-DA5BEAA97780}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4074E13F-82BA-4154-84A1-DA5BEAA97780}.Release|Any CPU.Build.0 = Release|Any CPU
+		{265E58EE-CF4F-4B6E-A928-EEF957E884E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{265E58EE-CF4F-4B6E-A928-EEF957E884E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{265E58EE-CF4F-4B6E-A928-EEF957E884E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{265E58EE-CF4F-4B6E-A928-EEF957E884E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

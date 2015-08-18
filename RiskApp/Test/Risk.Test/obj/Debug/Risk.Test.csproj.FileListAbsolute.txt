@@ -1,0 +1,12 @@
+D:\WHATech\RiskApp\Test\Risk.Test\obj\Debug\Risk.Test.csprojResolveAssemblyReference.cache
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Test.dll.config
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Test.dll
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Test.pdb
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Model.dll
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Service.dll
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Microsoft.Practices.Unity.dll
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Model.pdb
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Risk.Service.pdb
+D:\WHATech\RiskApp\Test\Risk.Test\bin\Debug\Microsoft.Practices.Unity.xml
+D:\WHATech\RiskApp\Test\Risk.Test\obj\Debug\Risk.Test.dll
+D:\WHATech\RiskApp\Test\Risk.Test\obj\Debug\Risk.Test.pdb

@@ -1,0 +1,4 @@
+D:\WHATech\RiskApp\Model\bin\Debug\Risk.Model.dll
+D:\WHATech\RiskApp\Model\bin\Debug\Risk.Model.pdb
+D:\WHATech\RiskApp\Model\obj\Debug\Risk.Model.dll
+D:\WHATech\RiskApp\Model\obj\Debug\Risk.Model.pdb

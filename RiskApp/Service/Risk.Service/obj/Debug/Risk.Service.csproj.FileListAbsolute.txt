@@ -3,3 +3,11 @@ D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Risk.Service.pdb
 D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.csprojResolveAssemblyReference.cache
 D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.dll
 D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.pdb
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Risk.Model.dll
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Risk.Model.pdb
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.dll
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.xml
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Microsoft.Practices.Unity.RegistrationByConvention.xml
