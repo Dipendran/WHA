@@ -1,0 +1,5 @@
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Risk.Service.dll
+D:\WHATech\RiskApp\Service\Risk.Service\bin\Debug\Risk.Service.pdb
+D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.csprojResolveAssemblyReference.cache
+D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.dll
+D:\WHATech\RiskApp\Service\Risk.Service\obj\Debug\Risk.Service.pdb

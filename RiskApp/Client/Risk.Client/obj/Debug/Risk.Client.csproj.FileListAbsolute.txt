@@ -1,0 +1,10 @@
+D:\WHATech\RiskApp\Client\Risk.Client\bin\Debug\Risk.Client.exe.config
+D:\WHATech\RiskApp\Client\Risk.Client\bin\Debug\Risk.Client.exe
+D:\WHATech\RiskApp\Client\Risk.Client\bin\Debug\Risk.Client.pdb
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client.csprojResolveAssemblyReference.cache
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\App.g.cs
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client_MarkupCompile.cache
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client.Properties.Resources.resources
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client.csproj.GenerateResource.Cache
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client.exe
+D:\WHATech\RiskApp\Client\Risk.Client\obj\Debug\Risk.Client.pdb
