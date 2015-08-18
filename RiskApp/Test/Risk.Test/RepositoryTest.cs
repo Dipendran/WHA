@@ -27,7 +27,7 @@ namespace Risk.Test
             Assert.IsFalse(uniqueCustomers.GroupBy(n => n).Any(c => c.Count() > 1));
         }
 
-        [TestMethod]
+         [TestMethod]
         public void ShouldLoadAllSettledBetForCustomer()
         {
             var uniqueCustomers = m_BetRepository.GetUniqueCustomerID();

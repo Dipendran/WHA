@@ -11,6 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Risk.Service.ContainerSetup;
+using Microsoft.Practices.Unity;
 
 namespace Risk.Client
 {
@@ -22,6 +24,10 @@ namespace Risk.Client
         public RiskAnalyser()
         {
             InitializeComponent();
+
+            DataContext = Container.UnityContainer.Resolve<RiskAnalyserViewModel>();
         }
+
+        
     }
 }

@@ -34,6 +34,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\packages\Unity.3.5.1404.0\lib\net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -60,6 +63,7 @@
     <Compile Include="RiskAnalyser.xaml.cs">
       <DependentUpon>RiskAnalyser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="RiskAnalyserViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -93,6 +97,16 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Model\Risk.Model.csproj">
+      <Project>{4074e13f-82ba-4154-84a1-da5beaa97780}</Project>
+      <Name>Risk.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Service\Risk.Service\Risk.Service.csproj">
+      <Project>{6c010bb8-f483-4a9a-b22f-288e7dfcffb7}</Project>
+      <Name>Risk.Service</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

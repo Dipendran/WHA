@@ -8,14 +8,14 @@ namespace Risk.Model
 {
     public class Bet:BindingObject
     {
-        
-        
         private int _customerId;
         private int _eventId;
         private int _participantId;
         private int _stake;
         private int _win;
-
+        private bool _unusual;
+        private bool _highlyUnusual;
+        private bool _bigWin;
 
         public int CustomerId
         {
@@ -65,6 +65,37 @@ namespace Risk.Model
             {
                 _win = value;
                 OnPropertyChanged("Win");
+            }
+        }
+
+
+        public bool Unusual
+        {
+            get { return _unusual; }
+            set
+            {
+                _unusual = value;
+                OnPropertyChanged("Unusual");
+            }
+        }
+
+        public bool HighlyUnusual
+        {
+            get { return _highlyUnusual; }
+            set
+            {
+                _highlyUnusual = value;
+                OnPropertyChanged("HighlyUnusual");
+            }
+        }
+
+        public bool BigWin
+        {
+            get { return _bigWin; }
+            set
+            {
+                _bigWin = value;
+                OnPropertyChanged("BigWin");
             }
         }
     }

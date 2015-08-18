@@ -54,10 +54,15 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositories\BetRepository.cs" />
     <Compile Include="Repositories\IBetRepository.cs" />
+    <Compile Include="RiskPolicy\BigWinRiskPolicy.cs" />
+    <Compile Include="RiskPolicy\HighlyUnusalStakePolicy.cs" />
+    <Compile Include="RiskPolicy\IRiskPolicy.cs" />
+    <Compile Include="RiskPolicy\UnusalStakePolicy.cs" />
+    <Compile Include="RiskPolicy\WinningAtUnusalRatePolicy.cs" />
+    <Compile Include="Services\CustomerService.cs" />
+    <Compile Include="Services\ICustomerService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Services\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\..\Model\Risk.Model.csproj">
       <Project>{4074e13f-82ba-4154-84a1-da5beaa97780}</Project>
