@@ -46,8 +46,7 @@ namespace Risk.Service.Services
        
         
         public void Init()
-        {
-            
+        {   
             m_CustomerSettledBets = new List<CustomerBet>();
             m_CustomerUnSettledBets = new List<CustomerBet>();
 
