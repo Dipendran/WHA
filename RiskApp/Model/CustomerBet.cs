@@ -21,17 +21,6 @@ namespace Risk.Model
             }
         }
 
-        private bool _winningAtUnusalRate;
-        public bool WinningAtUnusalRate
-        {
-            get { return _winningAtUnusalRate; }
-            set
-            {
-                _winningAtUnusalRate = value;
-                OnPropertyChanged("WinningAtUnusalRate");
-            }
-        }
-
         private double m_averageBettingStake;
         public double AverageBettingStake
         {

@@ -60,6 +60,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Command\DelegateCommand.cs" />
+    <Compile Include="Converter\BooleanConverter.cs" />
+    <Compile Include="Converter\InvertBooleanConverter.cs" />
     <Compile Include="RiskAnalyser.xaml.cs">
       <DependentUpon>RiskAnalyser.xaml</DependentUpon>
     </Compile>
@@ -108,6 +111,7 @@
       <Name>Risk.Service</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

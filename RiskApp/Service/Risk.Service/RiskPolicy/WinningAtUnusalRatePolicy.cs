@@ -15,7 +15,8 @@ namespace Risk.Service.RiskPolicy
                 //Prevent div by zero
                 if (wins > 0 && totalBets > 0)
                 {
-                    customerBet.WinningAtUnusalRate = (float)((float)wins / (float)totalBets) * 100 >= 60;
+                    if((float)((float)wins / (float)totalBets) * 100 >= 60)
+                        customerBet.Bet.ToList().ForEach(y=>y.WinningAtUnusalRate = true);
                 }    
             
         }

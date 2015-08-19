@@ -69,7 +69,7 @@ namespace Risk.Service.Managers
         private static List<Bet> GetUnSettleBets()
         {
             var bets = new List<Bet>();
-            var filePath = @"C:\Temp\";
+            var filePath = ConfigurationManager.AppSettings["CSVFilePath"];
             var connectionString = String.Format(@"Provider=Microsoft.Jet.OleDb.4.0; Data Source={0};Extended Properties=""Text;HDR=YES;""", filePath);
             using (var cn = new OleDbConnection(connectionString))
             {

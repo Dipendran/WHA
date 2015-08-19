@@ -13,7 +13,7 @@ namespace Risk.Service.RiskPolicy
         {
             foreach (var bet in customerBet.Bet)
             {
-                if (bet.Stake >= 10 * customerBet.AverageBettingStake)
+                if (bet.Stake >= (10 * customerBet.AverageBettingStake))
                     bet.Unusual = true;
             }
         }

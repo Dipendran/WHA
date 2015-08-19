@@ -98,5 +98,17 @@ namespace Risk.Model
                 OnPropertyChanged("BigWin");
             }
         }
+
+        private bool _winningAtUnusalRate;
+        public bool WinningAtUnusalRate
+        {
+            get { return _winningAtUnusalRate; }
+            set
+            {
+                _winningAtUnusalRate = value;
+                OnPropertyChanged("WinningAtUnusalRate");
+            }
+        }
+        
     }
 }

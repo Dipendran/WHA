@@ -11,11 +11,11 @@ namespace Risk.Service.ContainerSetup
 {
     public static class Container
     {
-        private static IUnityContainer m_unityContainer;
+        private static readonly IUnityContainer m_unityContainer;
         static Container()
         {
             m_unityContainer = new UnityContainer();
-            m_unityContainer.RegisterType<IBetRepository, BetRepository>();
+            m_unityContainer.RegisterType<IBetRepository, BetRepository>(new ContainerControlledLifetimeManager());
             m_unityContainer.RegisterType<ICustomerService, CustomerService>();
             
         }

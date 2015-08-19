@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
+using Microsoft.Practices.ObjectBuilder2;
 using Risk.Model;
 using Risk.Service.Repositories;
 using Risk.Service.RiskPolicy;
@@ -41,12 +43,15 @@ namespace Risk.Service.Services
             }
         }
 
+       
         
         public void Init()
         {
+            
             m_CustomerSettledBets = new List<CustomerBet>();
             m_CustomerUnSettledBets = new List<CustomerBet>();
 
+            
             //Load AllUnique Customers from the bet history
             var customerIDs = m_repository.GetUniqueCustomerID();
 
@@ -72,6 +77,9 @@ namespace Risk.Service.Services
 
                 //Run policy on unsettled Bet
                 undsettledRiskPolicies.ForEach(policy => policy.Run(unSettledBet));
+
+                //Mark all these customer as Risky as they have risky history
+                unSettledBet.Bet.ForEach(x => x.WinningAtUnusalRate = settledBet.Bet.First().WinningAtUnusalRate);
 
             }
         }

@@ -3,6 +3,100 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              StartupUri="RiskAnalyser.xaml">
     <Application.Resources>
-         
+        <Style x:Key = "DefaultWindow"
+	       TargetType = "{x:Type Window}">
+            <Setter Property = "ResizeMode"
+		        Value = "CanResizeWithGrip"/>
+            <Setter Property = "BorderThickness"
+		        Value = "1"/>
+            <Setter Property = "BorderBrush"
+		        Value = "Black"/>
+        </Style>
+
+        <Style x:Key = "DefaultListView"
+	       TargetType = "{x:Type ListView}">
+            <Setter Property = "SnapsToDevicePixels"
+		        Value = "true"/>
+            <Setter Property = "AllowDrop"
+		        Value = "true"/>
+            <Setter Property = "FontWeight"
+		        Value = "Normal"/>
+            <Setter Property = "FontSize"
+		        Value = "14"/>
+            <Setter Property = "Width"
+		        Value = "950"/>
+            <Setter Property = "Height"
+		        Value = "750"/>
+            <Setter Property = "BorderBrush"
+		        Value = "LightGray"/>
+            <Setter Property = "BorderThickness"
+		        Value = "0"/>
+            <Setter Property = "HorizontalAlignment"
+		        Value = "Left"/>
+            <Setter Property = "VerticalAlignment"
+		        Value = "Center"/>
+            <Setter Property = "Foreground"
+		        Value = "Black"/>
+            <Setter Property = "Margin"
+		        Value = "-3,0,10,0"/>
+            <Style.Resources>
+                <SolidColorBrush x:Key = "{x:Static SystemColors.HighlightBrushKey}"
+			                 Color = "White"/>
+                <SolidColorBrush x:Key = "{x:Static SystemColors.ControlBrushKey}"
+			                 Color = "White"/>
+            </Style.Resources>
+        </Style>
+
+        <Style x:Key = "DefaultHeaderTextBlock"
+	       TargetType = "{x:Type TextBlock}">
+            <Setter Property = "SnapsToDevicePixels"
+		        Value = "true"/>
+            <Setter Property = "AllowDrop"
+		        Value = "true"/>
+            <Setter Property = "FontWeight"
+		        Value = "Normal"/>
+            <Setter Property = "FontSize"
+		        Value = "14"/>
+            <Setter Property = "HorizontalAlignment"
+		        Value = "Left"/>
+            <Setter Property = "Foreground"
+		        Value = "Black"/>
+            <Setter Property = "Padding"
+		        Value = "5,3,0,0"/>
+            <Setter Property = "Margin"
+		        Value = "0,2,0,2"/>
+            <Setter Property = "TextWrapping"
+		        Value = "Wrap"/>
+            <Setter Property = "Focusable"
+		        Value = "True"/>
+            <Setter Property = "TextAlignment"
+		        Value = "Justify"/>
+        </Style>
+
+        <Style x:Key = "DefaultScrollViewer"
+	       TargetType = "{x:Type ScrollViewer}">
+            <Setter Property = "SnapsToDevicePixels"
+		        Value = "true"/>
+            <Setter Property = "AllowDrop"
+		        Value = "true"/>
+            <Setter Property = "FontWeight"
+		        Value = "Normal"/>
+            <Setter Property = "FontSize"
+		        Value = "14"/>
+            <Setter Property = "HorizontalAlignment"
+		        Value = "Left"/>
+            <Setter Property = "VerticalScrollBarVisibility"
+		        Value = "Auto"/>
+            <Setter Property = "Foreground"
+		        Value = "Black"/>
+            <Setter Property = "Margin"
+		        Value = "0,2,10,2"/>
+            <Setter Property = "Focusable"
+		        Value = "True"/>
+            <Setter Property = "Height"
+		        Value = "50"/>
+            <Setter Property = "Width"
+		        Value = "200"/>
+        </Style>
     </Application.Resources>
 </Application>
