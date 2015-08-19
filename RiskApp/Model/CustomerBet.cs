@@ -10,8 +10,8 @@ namespace Risk.Model
     public class CustomerBet:BindingObject
     {
         
-        private ObservableCollection<Bet> _bet;
-        public ObservableCollection<Bet> Bet
+        private List<Bet> _bet;
+        public List<Bet> Bet
         {
             get { return _bet; }
             set

@@ -61,7 +61,7 @@ namespace Risk.Service.Services
             {
                 //Add Settled Bet for the given customer
                 var settledBet = new CustomerBet();
-                settledBet.Bet = new ObservableCollection<Bet>(m_repository.GetSettledBetForCustomer(customerID));
+                settledBet.Bet = new List<Bet>(m_repository.GetSettledBetForCustomer(customerID));
                 settledBet.AverageBettingStake = settledBet.Bet.Average(a=>a.Stake);
                 m_CustomerSettledBets.Add(settledBet);
                 
@@ -70,7 +70,7 @@ namespace Risk.Service.Services
 
                 //Add Unsettled Bets for the given Customer
                 var unSettledBet = new CustomerBet();
-                unSettledBet.Bet = new ObservableCollection<Bet>(m_repository.GetUnSettledBetForCustomer(customerID));
+                unSettledBet.Bet = new List<Bet>(m_repository.GetUnSettledBetForCustomer(customerID));
                 unSettledBet.AverageBettingStake = settledBet.AverageBettingStake;
                 m_CustomerUnSettledBets.Add(unSettledBet);
 
