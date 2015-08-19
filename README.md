@@ -36,7 +36,7 @@ WHA Tech Challenge
            if(ToWin >= 1000) Then highlight as Risky
   
       Instruction
-      1)  Ensure App.config is changed to point CSV files.
+      1)  Ensure App.config is changed to point CSV files,change column name to ToWin in Unsettled.CSV.
       2)  Ensure application downloads unity DLLs from github,package.config is part of the solution.
       3)  Solution is divided into
           a) Risk.Clinet (UI)
