@@ -54,10 +54,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Mock\MockCustomerService.cs" />
     <Compile Include="ServiceTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RepositoryTest.cs" />
     <Compile Include="CustomerServiceTest.cs" />
+    <Compile Include="PolicyTester.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Model\Risk.Model.csproj">

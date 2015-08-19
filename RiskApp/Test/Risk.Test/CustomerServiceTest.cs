@@ -4,6 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Risk.Service.ContainerSetup;
 using Risk.Service.Services;
 using Microsoft.Practices.Unity;
+using Risk.Test.Mock;
 
 namespace Risk.Test
 {
@@ -16,15 +17,28 @@ namespace Risk.Test
         [TestInitialize]
         public void Init()
         {
-            m_CustomerService = Container.UnityContainer.Resolve<ICustomerService>();
+            m_CustomerService = new MockCustomerService();
         }
 
         [TestMethod]
-        public void ShouldHighLightBigWin()
+        public void ShouldHaveBigWin()
         {
             m_CustomerService.Init();
-            var n = m_CustomerService.CustomerUnSettledBets.Where(x=>x.Bet.Any(y=>y.BigWin));
-            
+            Assert.IsNotNull(m_CustomerService.CustomerUnSettledBets.SelectMany(x=>x.Bet.Where(y=>y.BigWin)).ToList());
+        }
+
+        [TestMethod]
+        public void ShouldHaveUnusalWinning()
+        {
+            m_CustomerService.Init();
+            Assert.IsNotNull(m_CustomerService.CustomerUnSettledBets.SelectMany(x => x.Bet.Where(y => y.WinningAtUnusalRate)).ToList());
+        }
+
+        [TestMethod]
+        public void ShouldHaveHighUnusalWinning()
+        {
+            m_CustomerService.Init();
+            Assert.IsNotNull(m_CustomerService.CustomerUnSettledBets.SelectMany(x => x.Bet.Where(y => y.HighlyUnusual)).ToList());
         }
     }
 }
