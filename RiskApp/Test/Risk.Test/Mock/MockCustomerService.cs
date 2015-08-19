@@ -43,7 +43,7 @@ namespace Risk.Test.Mock
 
             Bet b = new Bet {CustomerId = 10, Win = 1100,Stake =10};
             CustomerBet c = new CustomerBet();
-            c.Bet = new ObservableCollection<Bet>();
+            c.Bet = new List<Bet>();
             c.Bet.Add(b);
             
             m_CustomerSettledBets.Add(c);
